@@ -86,7 +86,7 @@
 }
 .login-btn:hover {
   font-weight: 700;
-  background-color: #FFF;
+  background-color: #fff;
   color: #00cd6b;
   outline: none;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
@@ -111,7 +111,7 @@
 .signup-btn:hover {
   font-weight: 700;
   padding: 12px 25px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #00cd6b;
   outline: none;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -226,10 +226,7 @@
 }
 
 .homepage-right {
-  /* background: url("./imgs/Child\ fund\ guy.png") center; */
-  /* background-size: cover; */
-  /* width: 25%; */
-  height: 75vh;
+  height: 70vh;
   width: 45%;
 }
 
@@ -241,7 +238,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: -3.2rem;
+  bottom: 0;
   right: 14rem;
 }
 
