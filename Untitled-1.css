@@ -1,0 +1,12 @@
+.sponsor-imgs > img{
+    width: 20%;
+  }
+  .sponsor-imgs > img:nth-child(2) 
+  {
+    width: 25%;
+  }
+  .sponsor-imgs > img:last-child {
+    width: 15vw;
+    margin: 0 0 0 2rem;
+  }
+  

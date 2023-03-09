@@ -65,12 +65,13 @@
   color: red;
 }
 
-.header-btn {
+.header-btns {
   display: flex;
   gap: 40px;
   align-items: center;
+  z-index: 999;
 }
-.header-btn a {
+.header-btns a {
   text-decoration: none;
 }
 
@@ -85,8 +86,8 @@
 }
 .login-btn:hover {
   font-weight: 700;
-  background-color: #00cd6b;
-  color: #fff;
+  background-color: #FFF;
+  color: #00cd6b;
   outline: none;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
   transform: scale(1.1) translateY(-2px);
@@ -110,8 +111,8 @@
 .signup-btn:hover {
   font-weight: 700;
   padding: 12px 25px;
-  background-color: #00cd6b;
-  color: #fff;
+  background-color: #FFF;
+  color: #00cd6b;
   outline: none;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transform: scale(1.1) translateY(-2px);
@@ -145,7 +146,7 @@
   align-items: center;
 }
 .homepage-left {
-  width: 50%;
+  width: 45%;
   display: grid;
   gap: 40px;
 }
@@ -165,7 +166,7 @@
   color: #3a3a3a;
 }
 .homepage-btns {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,37 +225,50 @@
   font-weight: 700;
 }
 
+.homepage-right {
+  /* background: url("./imgs/Child\ fund\ guy.png") center; */
+  /* background-size: cover; */
+  /* width: 25%; */
+  height: 75vh;
+  width: 45%;
+}
+
+.homepage-right::after {
+  content: "";
+  width: 25%;
+  height: 45.6rem;
+  background: url("./imgs/Child\ fund\ guy.png") center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -3.2rem;
+  right: 14rem;
+}
+
 .sponsors {
   background-color: #f6f3f3;
   padding: 20px;
 }
 .sponsor-imgs {
-  max-width: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
 }
-.sponsor-imgs > img:last-child {
-  /* width: 15vw; */
+
+img {
+  width: 100%;
+}
+.sponsor-imgs > div {
+  width: 15%;
+}
+.sponsor-imgs > .first-health-div {
+  width: 18%;
+}
+.sponsor-imgs > .unicef-div {
+  width: 11%;
+}
+.sponsor-imgs > .lovato-div {
+  width: 17%;
   margin: 0 0 0 2rem;
-}
-
-.homepage-right {
-  /* background: url("./imgs/Child\ fund\ guy.png") center; */
-  /* background-size: cover; */
-  /* width: 25%; */
-  /* height: 55vh; */
-  width: 37%;
-}
-
-.homepage-right::after {
-  content: "";
-  width: 30%;
-  height: 41.5rem;
-  background: url("./imgs/Child\ fund\ guy.png") center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 0;
 }
